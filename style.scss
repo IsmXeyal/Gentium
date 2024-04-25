@@ -218,6 +218,14 @@
         margin-bottom: 20px;
     }
 
+    .sec2_span3{
+        width: 2px;
+        height: 60px;
+        background-color: #E9204F;
+        margin: auto;
+        margin-top: 20px;
+    }
+
     .sec2_Div{
         display: flex;
         flex-direction: column;
@@ -254,6 +262,8 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
+            margin-bottom: 80px;
+
 
             .grid-Item{
                 background-color: #f0efef;
@@ -292,6 +302,7 @@
             .grid-Item:hover{
                 background-color: #E9204F;
 
+
                 i:first-child{
                     font-size: 50px;
                 }
@@ -304,4 +315,99 @@
 
     }
 
+}
+
+
+/*      section 3    */
+
+#Works{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    padding: 100px 0;
+
+    .sec3_span2{
+        width: 2px;
+        height: 60px;
+        background-color: #E9204F;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .sec3_Div_text{
+        display: flex;
+        margin-left: 230px;
+
+        .sec3_span1{
+            width: 40px;
+            height: 2px;
+            background-color: #E9204F;
+            margin-bottom: 30px;
+        }
+
+        h2{
+            color: #1B1B1B;
+            font-size: 48px;
+            font-weight: bolder;
+            line-height: 58px;
+            margin-bottom: 20px;
+        }
+
+        h4{
+            color: #e9204f;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22px;
+            margin-bottom: 50px;
+        }
+
+        a{
+            max-height: 50px;
+            height: 100%;
+            padding: 15px 32px;
+            color: black;
+            font-size: 14px;
+            margin-left: 1020px;
+            margin-top: 40px;
+            font-weight: 700;
+            background-color: transparent;
+            border: 2px solid #e9204f;
+            cursor: pointer;
+            background: linear-gradient(to left, transparent 50%, #E9204F 50%) right;
+            background-size: 200%;
+            transition: .5s;
+        }
+
+        a:hover{
+            color: white;
+            background-position: left;
+        }
+
+        .sec3_Div_In{
+            display: flex;
+            flex-direction: column;
+        }
+
+        // .grid2_cont{
+        //     display: grid;
+        //     grid-template-columns: repeat(3, 1fr);
+        //     width: 100%;
+        //     max-height: 370px;
+        //     height: 100%;
+        //     gap: 15px;
+
+        //     .grid2_Item{
+        //         width: 370px;
+        //         height: 370px;
+        //         background-color: red;
+        //         padding: 30px 10px;
+        //     }
+        // }
+
+        #rad {
+            height: 14px;
+            width: 14px;
+            border: 2px solid #e0e0e0;
+        }
+    }
 }
