@@ -74,7 +74,7 @@ body{
 
 /*      section 1   */
 
-.section1{
+#Home{
     @include Justify();
     max-height: 2500px;
     height: 100%;
@@ -618,7 +618,7 @@ body{
 
         .grid3_Item_2{
             width: 350px;
-            height: 300px;
+            height: 270px;
 
             h2{
                 font-size: 24px;
@@ -633,5 +633,110 @@ body{
                 font-weight: 300;
             }
         }
+    }
+}
+
+/*      section 5    */
+#Client{
+    @include Justify;
+    padding: 30px 0;
+
+    .sec5_span2{
+        @include Justify_Span2;
+    }
+
+    .sec5_out{
+        display: flex;
+        padding: 0px 200px 80px;
+        gap: 80px;
+
+        .sec5_img{
+            position: relative;
+            max-width: 470px;
+            width: 100%;
+            max-height: 620px;
+            height: 100%;
+            z-index: 0;
+
+            img{
+                position: relative;
+                width: 470px;
+                height: 620px;
+                z-index: 2;
+            }
+    
+            div{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: #E9204F;
+                z-index: 1;
+                right: -4%;
+                bottom: -3%;
+            }
+        }
+
+        .sec5_Div_text{
+            display: flex;
+            margin-top: 40px;
+    
+            .sec5_span1{
+                @include Justify_Span1;
+            }
+
+            .sec5_span1_2{
+                width: 40px;
+                height: 2px;
+                margin-bottom: 50px;
+                background-color: #d4d0d0;
+            }
+    
+            h2{
+                color: #1B1B1B;
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 60px;
+                margin-bottom: 20px;
+            }
+    
+            h4{
+                color: #e9204f;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 22px;
+                margin-bottom: 60px;
+            }
+
+            h6{
+                color: #1B1B1B;
+                font-size: 15px;
+                font-weight: 800;
+                line-height: 26px;
+            }
+
+            p{
+                color: #747474;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 34px;
+                text-align: justify;
+                margin-bottom: 60px;
+            }
+    
+            .sec5_Div_In{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .grid_Images{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin: 0px 200px;
+        padding: 30px 50px;
+        border-top: 1px solid #d4d0d0;
+        gap: 10px;
+        margin-bottom: 60px;
     }
 }
