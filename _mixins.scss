@@ -17,3 +17,10 @@
     background-color: #E9204F;
     margin-bottom: 30px;
 }
+
+@mixin RadioButton{
+    height: 14px;
+    width: 14px;
+    accent-color: #E9204F;
+    cursor: pointer;
+}
